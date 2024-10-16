@@ -1,0 +1,96 @@
+@import '../variables';
+
+
+/*ASIDE*/
+aside {
+    height: 100%;
+    max-width: 249px;
+    width: 100%;
+    background-color: $white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            padding: 33px 0 62px 0;
+            display: flex;
+            align-items: center;
+
+            &_title {
+                margin-left: 9px;
+                font-size: 25px;
+                font-weight: 900;
+                color: $title;
+            }
+        }
+
+        nav {
+            ul {
+                li {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    position: relative;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .image {
+                        margin-right: 26px;
+
+                        svg {
+                            fill: $text-light;
+                            transition: 0.2s all;
+                        }
+                    }
+
+                    h4 {
+                        color: $text-light;
+                        font-size: 18px;
+                        font-weight: 500;
+                        transition: 0.2s all;
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 6px;
+                        height: 60px;
+                        position: absolute;
+                        left: -58px;
+                        top: -17px;
+                        background: $blue;
+                        border-radius: 0px 10px 10px 0px;
+                        transition: 0.2s all;
+                    }
+
+                    &:hover {
+
+                        h4 {
+                            color: $blue;
+                        }
+
+                        .image {
+                            svg {
+                                fill: $blue;
+                            }
+                        }
+
+                        &::before {
+                            left: -48px;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

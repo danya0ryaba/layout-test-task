@@ -1,0 +1,59 @@
+@import '../variables';
+
+header {
+    padding: 33px 40px 33px 289px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .header_title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .header_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: $background;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                z-index: 1;
+            }
+
+        }
+
+        .setting {
+            margin: 0 30px;
+        }
+
+        .notification {
+            margin-right: 25px;
+        }
+
+        .profile {}
+
+
+    }
+
+    .profile {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        border-radius: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
