@@ -1,0 +1,40 @@
+@import '../variables';
+
+.wrapper_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    width: 100%;
+    max-width: 418px;
+
+    .label {
+        color: $text-black;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 11px;
+    }
+
+    .input {
+        border-radius: 15px;
+        border: 1px solid #DFEAF2;
+        padding: 16px 16px 16px 20px;
+        color: $no-active-text;
+    }
+
+    input[type="date"] {
+        position: relative;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        color: transparent;
+        background: transparent;
+    }
+
+}

@@ -4,7 +4,7 @@ import { Search } from './Search'
 export const Header: React.FC = () => {
     return <header>
 
-        <h1 className="header_title">lorem</h1>
+        <h3 className="header_title">Setting</h3>
 
         <div className="header_info">
 
