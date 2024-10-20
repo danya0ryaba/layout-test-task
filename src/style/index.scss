@@ -1,11 +1,25 @@
 @import './variables';
 @import './libs/normalize';
+@import './fonts.scss';
 
 @import './components/all.scss';
 
 body {
     background-color: $background;
-    font-family: "Inter", sans-serif;
 }
 
-// .wrapper {}
+.wrapper {
+    margin: 31px 0 0 289px;
+
+    &_content {
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:975px) {
+    .wrapper {
+        margin: 25px;
+    }
+}

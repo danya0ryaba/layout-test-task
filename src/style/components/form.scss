@@ -1,7 +1,6 @@
 @import '../variables';
 
 .wrapper_form {
-    margin: 31px 0 0 289px;
     background-color: $white;
     max-width: 1110px;
     width: 100%;
@@ -9,25 +8,43 @@
 }
 
 .form {
-    height: 717px;
-    padding: 37px 30px 30px;
+    min-height: 717px;
+    padding: 37px 30px 92px;
     position: relative;
+    margin-bottom: 176px;
 
     &_choice {
         display: flex;
         margin-bottom: 63px;
+        padding: 7px 0 7px 10px;
         position: relative;
 
-        li {
+        &_li {
             margin-right: 75px;
-            font-size: 16px;
             font-weight: 500;
-
+            cursor: pointer;
+            position: relative;
 
             &:last-child {
                 margin-right: 0;
             }
 
+        }
+
+        .active {
+            transition: 0.2s ease;
+
+            &::after {
+                content: '';
+                width: 114px;
+                height: 3px;
+                background: $blue;
+                position: absolute;
+                bottom: -18px;
+                left: -15%;
+                z-index: 100;
+                border-radius: 10px 10px 0px 0px;
+            }
         }
 
         &::after {
@@ -47,7 +64,7 @@
         display: flex;
 
         .profile_image {
-            margin-right: 53px;
+            margin-right: 3.7857rem;
 
             .image {
                 position: relative;
@@ -79,8 +96,6 @@
                     right: -2px;
                 }
 
-
-
             }
 
         }
@@ -91,14 +106,13 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            // position: relative;
 
             .btn {
                 position: absolute;
                 right: 30px;
                 bottom: 30px;
                 padding: 14px 74px;
-                font-size: 18px;
+                font-size: 1.2857rem;
                 font-weight: 500;
                 color: $white;
                 background-color: $blue;

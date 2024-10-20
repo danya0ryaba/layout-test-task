@@ -14,7 +14,7 @@ export const Dashboard: React.FC = () => {
             <nav>
                 <ul>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg className='image-svg' width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_725)">
@@ -25,7 +25,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Dashboard</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.20834 22.9167C5.20899 23.469 5.42869 23.9985 5.81925 24.3891C6.20981 24.7797 6.73934 24.9994 7.29167 25H17.7083C18.2607 24.9994 18.7902 24.7797 19.1808 24.3891C19.5713 23.9985 19.791 23.469 19.7917 22.9167V22.0052H5.20834V22.9167Z" />
@@ -39,7 +39,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Transactions</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_714)">
@@ -51,7 +51,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Accounts</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_682)">
@@ -68,7 +68,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Investments</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_676)">
@@ -82,7 +82,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Credit Cards</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_701)">
@@ -95,7 +95,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Loans</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_655)">
@@ -111,7 +111,7 @@ export const Dashboard: React.FC = () => {
                         <h4>Services</h4>
                     </li>
 
-                    <li>
+                    <li className='li'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_717)">
@@ -126,7 +126,7 @@ export const Dashboard: React.FC = () => {
                         <h4>My Privileges</h4>
                     </li>
 
-                    <li>
+                    <li className='li active'>
                         <div className="image">
                             <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_20_674)">

@@ -1,14 +1,19 @@
 @import '../variables';
 
 header {
-    padding: 33px 40px 33px 289px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px 40px 20px 290px;
     background-color: $white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
 
     .header_title {
-        font-size: 28px;
+        font-size: 2rem;
         font-weight: 600;
     }
 
@@ -59,5 +64,27 @@ header {
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+@media (max-width:975px) {
+    header {
+        padding: 25px;
+        align-items: start;
+
+        .header_info {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+
+            .icon {
+                display: none;
+            }
+
+            .profile {
+                margin-bottom: 20px;
+            }
+
+        }
+
     }
 }

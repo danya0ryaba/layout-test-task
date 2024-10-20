@@ -8,9 +8,13 @@ type LayoutPropsType = {
 }
 
 export const Layout: React.FC<LayoutPropsType> = () => {
-    return <div className="wrapper">
+    return <>
         <Header />
         <Dashboard />
-        <div className="content"><Outlet /></div >
-    </div>
+        <div className="wrapper">
+            <div className="wrapper_content">
+                <Outlet />
+            </div>
+        </div >
+    </>
 }

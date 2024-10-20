@@ -10,7 +10,9 @@ aside {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 100;
     overflow-y: auto;
+    border-right: 1px solid #E6EFF5;
 
     .aside {
         display: flex;
@@ -24,15 +26,16 @@ aside {
 
             &_title {
                 margin-left: 9px;
-                font-size: 25px;
+                font-size: 1.7857rem;
                 font-weight: 900;
                 color: $title;
             }
         }
 
         nav {
+
             ul {
-                li {
+                .li {
                     cursor: pointer;
                     display: flex;
                     align-items: center;
@@ -54,7 +57,7 @@ aside {
 
                     h4 {
                         color: $text-light;
-                        font-size: 18px;
+                        font-size: 1.2857rem;
                         font-weight: 500;
                         transition: 0.2s all;
                     }
@@ -71,26 +74,34 @@ aside {
                         transition: 0.2s all;
                     }
 
-                    &:hover {
+                }
 
-                        h4 {
-                            color: $blue;
+                .active {
+
+                    h4 {
+                        color: $blue;
+                    }
+
+                    .image {
+                        svg {
+                            fill: $blue;
                         }
+                    }
 
-                        .image {
-                            svg {
-                                fill: $blue;
-                            }
-                        }
-
-                        &::before {
-                            left: -48px;
-                        }
-
+                    &::before {
+                        left: -48px;
                     }
 
                 }
+
             }
         }
+    }
+}
+
+
+@media (max-width:975px) {
+    aside {
+        display: none;
     }
 }
